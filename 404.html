@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      sessionStorage.setItem("portfolioRedirect", location.href);
+      location.replace(
+        location.origin +
+          location.pathname.split("/").slice(0, 2).join("/") +
+          "/"
+      );
+    </script>
+    <title>Loading portfolio…</title>
+  </head>
+  <body></body>
+</html>
